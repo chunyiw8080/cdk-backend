@@ -1,3 +1,3 @@
 import os
 
-DB_URL = os.getenv("DB_URL", "mysql+pymysql://user:password@localhost:3306/testdb")
+DB_URL = os.getenv("DB_URL", "mysql+pymysql://chunyiwang:Wcy199545@cdk-mysql.mysql.database.azure.com:3306/cdk")

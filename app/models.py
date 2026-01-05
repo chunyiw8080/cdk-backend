@@ -3,7 +3,7 @@ from datetime import datetime
 from app.db import Base
 
 class CDKey(Base):
-    __tablename__ = "cdkeys"
+    __tablename__ = "cdk"
 
     id = Column(Integer, primary_key=True, index=True)
     cdk = Column(String(64), unique=True, index=True, nullable=False)

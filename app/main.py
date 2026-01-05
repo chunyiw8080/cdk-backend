@@ -21,8 +21,7 @@ def verify_cdk(
     db: Session = Depends(get_db)
 ):
     print(req)
-    # success = verify_and_use_cdk(db, req.user_id, req.cdk)
-    success = True
+    success = verify_and_use_cdk(db, req.user_id, req.cdk)
 
     if not success:
         raise HTTPException(
