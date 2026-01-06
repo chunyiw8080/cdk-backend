@@ -15,6 +15,10 @@ def get_db():
     finally:
         db.close()
 
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
+
 @app.post("/cdk/verify")
 def verify_cdk(
     req: CDKRequest,
